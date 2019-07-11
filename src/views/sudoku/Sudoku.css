@@ -1,0 +1,91 @@
+.sudoku {
+    width: 90%; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Board css */ 
+.sudoku .board {
+    display: flex; 
+    flex-direction: column; 
+    padding: 1rem; 
+    align-items: center;
+}
+
+.sudoku .board .boardrow {
+    display: flex; 
+}
+
+.sudoku .outersquare {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black; 
+}
+
+.sudoku .outersquare .outersquarerow {
+    display: flex; 
+}
+
+.sudoku .outersquare .innersquarebutton {
+    border: 1px solid gray; 
+    width: 3rem;
+    height: 3rem; 
+    outline: none;
+    font-size: 2rem;
+    font-family: serif;
+}
+
+.sudoku .outersquare .innersquarebutton:hover {
+    background: gray; 
+    border: 1px solid #003399;
+}
+
+.sudoku .outersquare .innersquarebutton:active {
+    background: lightgray; 
+}
+
+.sudoku .outersquare .innersquareactive {
+    border: 2px solid red; 
+}
+
+/* Controls css */
+.sudoku .controls {
+    margin-top: 1rem; 
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sudoku .controls h1 {
+    margin-bottom: 2rem; 
+}
+
+.sudoku .controls .controlsrow {
+    flex: 1; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 1rem; 
+}
+
+.sudoku .controls .controlsrow .controlsbutton {
+    height: 3rem;
+    width: 3rem; 
+    outline: none;
+    font-size: 2rem;
+    font-family: serif;
+    border: 1px solid #003399; 
+    background: #0099CC; 
+    color: white; 
+}
+
+.sudoku .controls .controlsrow .controlsbutton:hover {
+    background: #003399;
+}
+
+.sudoku .controls .controlsrow .controlsbutton:active {
+    background: rgb(3, 83, 110); 
+}
